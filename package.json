@@ -7,7 +7,7 @@
     "start": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
     "build:clean": "npx rimraf dist",
-    "build": "npm run build:clean && tsc && tsc-alias -p tsconfig.json",
+    "build": "npm run build:clean && tsc",
     "server": "npm run build && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
